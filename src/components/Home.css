@@ -1,0 +1,23 @@
+.home-section {
+  max-width: 1100px;
+}
+
+.home-avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.feature p {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.tech-logo {
+  width: 40px;
+  height: 40px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
