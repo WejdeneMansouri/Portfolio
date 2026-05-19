@@ -10,15 +10,16 @@ export default function Home() {
         <Col md={4} className="text-center">
           <img
             src="/photo_cv.jpeg"
-            alt="Wejdene Mansouri"
+            alt="Wijden Mansouri"
             className="img-fluid rounded-circle home-avatar"
           />
         </Col>
         <Col md={8} className="text-md-start text-center">
           <h1 className="fw-bold">Wijden Mansouri</h1>
-          <h4 className="text-muted">Ingénieure Logiciel Junior</h4>
+          <h4 className="text-muted">Développeuse Logicielle Junior Full-Stack</h4>
           <p className="lead mt-3">
-            Jeune diplômée en Génie Logiciel, passionnée par le
+            Développeuse logicielle junior full-stack, attentive aux détails, passionnée par le 
+            développement d'applications et motivée par la création de solutions innovantes liant le 
             <strong> développement web </strong> et <strong>l’IA</strong>.
           </p>
           <div className="d-flex gap-3 justify-content-md-start justify-content-center">
@@ -42,10 +43,10 @@ export default function Home() {
         <Col md={12} className="text-center">
           <h3 className="fw-bold mb-3">À propos</h3>
           <p className="text-muted">
-            Je suis passionnée par la création de solutions logicielles
-            innovantes. J’ai une solide base en développement full-stack et je
-            m’intéresse particulièrement à l’Intelligence Artificielle et à
-            l’optimisation des systèmes.
+            Passionnée par la création de solutions logicielles innovantes, j'ai consolidé une solide 
+            base en développement full-stack à travers diverses expériences d'applications métiers, de la gestion RH 
+            au monitoring applicatif. Je m’intéresse particulièrement à l’intégration de l’Intelligence Artificielle 
+            et à l'optimisation des architectures logicielles pour améliorer l'expérience utilisateur et les performances techniques.
           </p>
         </Col>
         <Col
@@ -54,80 +55,94 @@ export default function Home() {
         >
           <div className="feature text-center">
             <i className="bi bi-search fs-2 text-primary"></i>
-            <p>Curieuse</p>
+            <p className="fw-bold">Attentive aux détails</p>
           </div>
           <div className="feature text-center">
             <i className="bi bi-people fs-2 text-primary"></i>
-            <p>Esprit d’équipe</p>
+            <p className="fw-bold">Esprit d’équipe</p>
           </div>
           <div className="feature text-center">
             <i className="bi bi-check2-circle fs-2 text-primary"></i>
-            <p>Rigoureuse</p>
+            <p className="fw-bold">Organisation & Gestion</p>
           </div>
           <div className="feature text-center">
             <i className="bi bi-lightbulb fs-2 text-primary"></i>
-            <p>Créative</p>
+            <p className="fw-bold">Créativité & Innovation</p>
           </div>
         </Col>
       </Row>
 
-      {/* Projets */}
+      {/* Projets & Expériences Phares */}
       <Row id="projets" className="mb-4 section">
-        <h3 className="fw-bold text-center mb-4">Projets</h3>
+        <h3 className="fw-bold text-center mb-4">Projets & Expériences Récentes</h3>
 
+        {/* Projet 1: Joya Energy */}
         <Col md={4} className="mb-3">
           <Card className="h-100 text-center shadow-sm">
-            <Card.Body>
-              <div className="mb-3">
-                <img
-                  src="/logo.png"
-                  alt="React Logo"
-                  className="tech-logo"
-                />
+            <Card.Body className="d-flex flex-column justify-content-between">
+              <div>
+                <div className="mb-3">
+                  <img src="/next.png" alt="Next.js Logo" className="tech-logo" style={{ maxHeight: "40px" }} />
+                </div>
+                <Card.Title className="fw-bold">Joya Energy Platform</Card.Title>
+                <Card.Text className="text-muted small">
+                  Développement du site web (utilisateur & back-office), monitoring d'applications et intégration d'un chatbot IA intelligent.
+                </Card.Text>
               </div>
-              <Card.Title>E-commerce Marbre</Card.Title>
-              <Card.Text>React + Node.js</Card.Text>
-              <Button
-                variant="primary"
-                href="https://github.com/WejdeneMansouri/Marbrerie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir le projet
-              </Button>
+              <div className="mt-3">
+                <Card.Text className="text-primary sm mb-2">Next.js • Node.js • MongoDB</Card.Text>
+                <Button variant="primary" size="sm" disabled>Projet Professionnel</Button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
 
+        {/* Projet 2: Portail RH ArabSoft */}
         <Col md={4} className="mb-3">
           <Card className="h-100 text-center shadow-sm">
-            <Card.Body>
-              <div className="mb-3">
-                <img src="/angular.png" alt="Angular Logo" className="tech-logo" />
+            <Card.Body className="d-flex flex-column justify-content-between">
+              <div>
+                <div className="mb-3">
+                  <img src="/angular.png" alt="Angular Logo" className="tech-logo" style={{ maxHeight: "40px" }} />
+                </div>
+                <Card.Title className="fw-bold">Portail RH (ArabSoft)</Card.Title>
+                <Card.Text className="text-muted small">
+                  Application complète de gestion des employés, congés, paie et évaluations. Rapprochement des processus métier ayant réduit de 40% le temps de traitement.
+                </Card.Text>
               </div>
-              <Card.Title>Portail RH</Card.Title>
-              <Card.Text>Angular + MySQL</Card.Text>
-              <Button variant="primary">Voir le projet</Button>
+              <div className="mt-3">
+                <Card.Text className="text-primary sm mb-2">Angular • Spring Boot • MySQL</Card.Text>
+                <Button variant="primary" size="sm" disabled>Projet d'Entreprise</Button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
 
+        {/* Projet 3: E-commerce Wafa / Marbrerie */}
         <Col md={4} className="mb-3">
           <Card className="h-100 text-center shadow-sm">
-            <Card.Body>
-              <div className="mb-3">
-                <img src="/xampp.png" alt="Oracle Logo" className="tech-logo" />
+            <Card.Body className="d-flex flex-column justify-content-between">
+              <div>
+                <div className="mb-3">
+                  <img src="/logo.png" alt="React Logo" className="tech-logo" style={{ maxHeight: "40px" }} />
+                </div>
+                <Card.Title className="fw-bold">Application E-commerce Wafa</Card.Title>
+                <Card.Text className="text-muted small">
+                  Conception et mise en production d'une application de vente de produits en ligne optimisée avec une architecture performante.
+                </Card.Text>
               </div>
-              <Card.Title>Event Platform</Card.Title>
-              <Card.Text>HTML + PHP</Card.Text>
-              <Button
-                variant="primary"
-                href="https://github.com/WejdeneMansouri/iTeam-Event-Platform/tree/main"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir le projet
-              </Button>
+              <div className="mt-3">
+                <Card.Text className="text-primary sm mb-2">React • Node.js • MySQL</Card.Text>
+                <Button
+                  variant="primary"
+                  size="sm"
+                  href="https://github.com/WejdeneMansouri/Marbrerie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le projet
+                </Button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
