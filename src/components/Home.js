@@ -24,12 +24,12 @@ export default function Home() {
           </p>
           <div className="d-flex gap-3 justify-content-md-start justify-content-center">
             <Button 
-              variant="primary" 
-              href={`${process.env.PUBLIC_URL}/${encodeURIComponent("Mansouri Wijden CV.pdf")}`} 
-              target="_blank"
-            >
-              Télécharger mon CV
-            </Button>
+  variant="primary" 
+  href={`${process.env.PUBLIC_URL}/${encodeURIComponent("Mansouri Wijden CV.pdf")}?v=2`} 
+  target="_blank"
+>
+  Télécharger mon CV
+</Button>
             <Button
               variant="outline-primary"
               href="https://github.com/WejdeneMansouri"
