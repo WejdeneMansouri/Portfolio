@@ -104,11 +104,25 @@ export default function Competences() {
         <Col md={12}>
           <h3 className="fw-bold section-title">🌍 Langues</h3>
           <div className="d-flex flex-wrap gap-3">
-            <Badge bg="light" text="dark" className="border px-3 py-2 fs-6">🇹🇳 Arabe — Natif</Badge>
-            <Badge bg="light" text="dark" className="border px-3 py-2 fs-6">🇫🇷 Français — C1</Badge>
-            <Badge bg="light" text="dark" className="border px-3 py-2 fs-6">🇬🇧 Anglais — B2</Badge>
-            <Badge bg="light" text="dark" className="border px-3 py-2 fs-6">🇹🇷 Turc — C1</Badge>
-            <Badge bg="light" text="dark" className="border px-3 py-2 fs-6">🇩🇪 Allemand — B1</Badge>
+            {[
+              { flag: "🇹🇳", name: "Arabe", level: "Natif" },
+              { flag: "🇫🇷", name: "Français", level: "C1" },
+              { flag: "🇬🇧", name: "Anglais", level: "B2" },
+              { flag: "🇹🇷", name: "Turc", level: "C1" },
+              { flag: "🇩🇪", name: "Allemand", level: "B1" },
+            ].map((lang, index) => (
+              <Badge 
+                key={index}
+                bg="light" 
+                text="dark" 
+                className="border d-flex align-items-center gap-2 px-3 py-2 fs-6 shadow-sm language-badge"
+                style={{ borderRadius: "20px" }}
+              >
+                <span className="fs-4" style={{ lineHeight: "1" }}>{lang.flag}</span>
+                <span className="fw-semibold me-1">{lang.name}</span>
+                <Badge bg="secondary" className="font-monospace" style={{ fontSize: "0.75rem" }}>{lang.level}</Badge>
+              </Badge>
+            ))}
           </div>
         </Col>
       </Row>

@@ -9,7 +9,7 @@ export default function Home() {
       <Row className="align-items-center mb-5">
         <Col md={4} className="text-center">
           <img
-            src="/photo_cv.jpeg"
+            src={`${process.env.PUBLIC_URL}/photo_cv.jpeg`}
             alt="Wijden Mansouri"
             className="img-fluid rounded-circle home-avatar"
           />
@@ -23,7 +23,11 @@ export default function Home() {
             <strong> développement web </strong> et <strong>l’IA</strong>.
           </p>
           <div className="d-flex gap-3 justify-content-md-start justify-content-center">
-            <Button variant="primary" href="/CV_Wijden_Mansouri.pdf" target="_blank">
+            <Button 
+              variant="primary" 
+              href={`${process.env.PUBLIC_URL}/${encodeURIComponent("Mansouri Wijden CV.pdf")}`} 
+              target="_blank"
+            >
               Télécharger mon CV
             </Button>
             <Button
@@ -82,7 +86,12 @@ export default function Home() {
             <Card.Body className="d-flex flex-column justify-content-between">
               <div>
                 <div className="mb-3">
-                  <img src="/next.png" alt="Next.js Logo" className="tech-logo" style={{ maxHeight: "40px" }} />
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/next.jpeg`} 
+                    alt="Next.js Logo" 
+                    className="tech-logo" 
+                    style={{ maxHeight: "40px" }} 
+                  />
                 </div>
                 <Card.Title className="fw-bold">Joya Energy Platform</Card.Title>
                 <Card.Text className="text-muted small">
@@ -103,7 +112,12 @@ export default function Home() {
             <Card.Body className="d-flex flex-column justify-content-between">
               <div>
                 <div className="mb-3">
-                  <img src="/angular.png" alt="Angular Logo" className="tech-logo" style={{ maxHeight: "40px" }} />
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/angular.png`} 
+                    alt="Angular Logo" 
+                    className="tech-logo" 
+                    style={{ maxHeight: "40px" }} 
+                  />
                 </div>
                 <Card.Title className="fw-bold">Portail RH (ArabSoft)</Card.Title>
                 <Card.Text className="text-muted small">
@@ -124,7 +138,12 @@ export default function Home() {
             <Card.Body className="d-flex flex-column justify-content-between">
               <div>
                 <div className="mb-3">
-                  <img src="/logo.png" alt="React Logo" className="tech-logo" style={{ maxHeight: "40px" }} />
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/logo.png`} 
+                    alt="React Logo" 
+                    className="tech-logo" 
+                    style={{ maxHeight: "40px" }} 
+                  />
                 </div>
                 <Card.Title className="fw-bold">Application E-commerce Wafa</Card.Title>
                 <Card.Text className="text-muted small">
